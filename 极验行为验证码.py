@@ -5,7 +5,8 @@ import requests
 import base64
 import os
 import random
-API_URL = "http://api.ttshitu.com"
+#需通过付费打码平台的api接口，为避免风险，故不在此展示，下面的predict_base64与r2的结果均是付费的打码平台所提供的，可对此进行编辑改写
+api ="*************"
 def predict_base64(username, password, typeid, image_path, imageback_path=None, timeout=60, retries=3):
     """
     使用 JSON + Base64 提交识别请求。
